@@ -4,7 +4,7 @@ spring:
   datasource:
     username: postgres
     password: peru2020
-    url:  jdbc:postgresql://localhost:5432/redesNeuronales
+    url:  jdbc:postgresql://ec2-34-253-119-24.eu-west-1.compute.amazonaws.com
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
