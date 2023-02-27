@@ -2,10 +2,14 @@ server:
   port: 3009
 spring:
   datasource:
-    username: postgres
-    password: peru2020
-    url:  jdbc:postgresql://ec2-34-253-119-24.eu-west-1.compute.amazonaws.com
+    username: pqelhbaoggshpo
+    password: 9f7eb360bb958a8e9b3801a002d4ea614a93947b945eff52f8380916a789b730
+    url: jdbc:postgresql://ec2-34-253-119-24.eu-west-1.compute.amazonaws.com:5432/d2coqgf6fs109s
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresSQLDialect
+    show-sql: true
