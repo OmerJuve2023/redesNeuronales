@@ -1,0 +1,11 @@
+server:
+  port: 3009
+spring:
+  datasource:
+    username: postgres
+    password: peru2020
+    url:  jdbc:postgresql://localhost:5432/redesNeuronales
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
