@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -17,7 +16,6 @@ public class TiempoService {
     private final TiempoRepository repository;
 
     public void addTiempo(Tiempo tiempo) {
-        tiempo.setFecha(new Date());
         repository.save(tiempo);
     }
 
