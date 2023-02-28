@@ -19,7 +19,7 @@ public class Tiempo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
     private Long codigo;
-    @Column(length = 7)
+    @Column(length = 8)
     private String clave;
     private String t1;
     private String t2;
@@ -28,6 +28,7 @@ public class Tiempo {
     private String t5;
     private String t6;
     private String t7;
+    private String t8;
     private Date fecha;
 
 }
