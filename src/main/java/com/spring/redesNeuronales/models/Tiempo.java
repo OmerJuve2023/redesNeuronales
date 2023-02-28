@@ -17,8 +17,9 @@ import java.util.Date;
 public class Tiempo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true)
     private Long codigo;
-    @Column(length = 8)
+    @Column(length = 7)
     private String clave;
     private String t1;
     private String t2;
@@ -28,6 +29,5 @@ public class Tiempo {
     private String t6;
     private String t7;
     private Date fecha;
-
 
 }
