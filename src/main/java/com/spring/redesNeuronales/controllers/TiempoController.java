@@ -29,7 +29,6 @@ public class TiempoController {
         service.addTiempo(tiempo);
         return "redirect:/index";
     }
-
     @GetMapping("/exportCSV")
     public void exportCsv(HttpServletResponse response) {
         try {
